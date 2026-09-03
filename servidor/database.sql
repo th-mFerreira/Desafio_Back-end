@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS crudealunos
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+USE crudealunos;
+
+CREATE TABLE IF NOT EXISTS alunos (
+  id INT NOT NULL AUTO_INCREMENT,
+  nome VARCHAR(255) NOT NULL,
+  idade INT NOT NULL,
+  PRIMARY KEY (id)
+);
